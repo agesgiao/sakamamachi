@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタンプラリー</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>スタンプラリー</h1>
+    <nav>
+      <a href="#home"></a>
+      <a href="#stamps"></a>
+      <a href="#contact"></a>
+    </nav>
+  </header>
+	
+  <div class="samune">
+	<img src="images/samune3.png" alt="画像13">
+	</div>
+
+  <main>
+    <h2>おさかなびとスタンプラリー</h2>
+
+    <div class="stamp-container">
+      <div class="stamp" id="images/stamp1">1</div>
+      <div class="stamp" id="images/stamp2">2</div>
+      <div class="stamp" id="images/stamp3">3</div>
+	  <div class="stamp" id="images/stamp4">4</div>
+      <div class="stamp" id="images/stamp5">5</div>
+      <div class="stamp" id="images/stamp6">6</div>
+	  <div class="stamp" id="images/stamp7">7</div>
+      <div class="stamp" id="images/stamp8">8</div>
+      <div class="stamp" id="images/stamp9">9</div>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="keyword" placeholder="キーワードを入力してください">
+      <button onclick="checkKeyword()">送信</button>
+    </div>
+
+    <div id="error" class="error"></div>
+
+    <button class="reset-button" onclick="resetStamps()">リセット</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+	
+	 <footer>
+        <p>&copy; 2024 sutamprary game</p>
+    </footer>
+</html>
