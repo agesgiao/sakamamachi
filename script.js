@@ -1,13 +1,13 @@
 const validKeywords = {
-  "stamp1": "apple",
-  "stamp2": "banana",
-  "stamp3": "cherry",
-  "stamp4": "lemon",
-  "stamp5": "orenge",
-  "stamp6": "berry",
-  "stamp7": "kiwi",
-  "stamp8": "suika",
-  "stamp9": "melon",
+  "stamp1": "りんご",
+  "stamp2": "ばなな",
+  "stamp3": "さくらんぼ",
+  "stamp4": "れもん",
+  "stamp5": "みかん",
+  "stamp6": "ぶどう",
+  "stamp7": "きうい",
+  "stamp8": "なし",
+  "stamp9": "かき",
 };
 
 function checkKeyword() {
