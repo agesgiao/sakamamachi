@@ -105,39 +105,39 @@ main h2 {
 }
 
 #stamp1.stamped {
-  background-image: url('stamp7.png');
+  background-image: url('images/stamp7.png');
 }
 
 #stamp2.stamped {
-  background-image: url('stamp1.png');
+  background-image: url('images/stamp1.png');
 }
 
 #stamp3.stamped {
-  background-image: url('stamp2.png');
+  background-image: url('images/stamp2.png');
 }
 
 #stamp4.stamped {
-  background-image: url('stamp3.png');
+  background-image: url('images/stamp3.png');
 }
 
 #stamp5.stamped {
-  background-image: url('stamp4.png');
+  background-image: url('images/stamp4.png');
 }
 
 #stamp6.stamped {
-  background-image: url('stamp5.png');
+  background-image: url('images/stamp5.png');
 }
 
 #stamp7.stamped {
-  background-image: url('stamp6.png');
+  background-image: url('images/stamp6.png');
 }
 
 #stamp8.stamped {
-  background-image: url('stamp7.png');
+  background-image: url('images/stamp7.png');
 }
 
 #stamp9.stamped {
-  background-image: url('stamp8.png');
+  background-image: url('images/stamp8.png');
 }
 
 .input-section {
