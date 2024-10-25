@@ -44,6 +44,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+function resetStamps() {
+  for (let i = 1; i <= 9; i++) {
+    const stampElement = document.getElementById('stamp' + i);
+    if (stampElement) {
+      stampElement.classList.remove('stamped');
+    } else {
+      console.error('該当するスタンプが見つかりません: stamp' + i);
+    }
+  }
+}
 
 // スタンプのリセット関数
 function resetStamps() {
