@@ -188,6 +188,79 @@ button:hover {
   background-color: #cc0000;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* headerより上に表示 */
+}
+
+.overlay-content {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none; /* オーバーレイを隠すためのクラス */
+}
+
+#overlay {
+    position: fixed; /* 固定位置 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 背景の透過色 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 横中央揃え */
+    align-items: center; /* 縦中央揃え */
+    z-index: 1000; /* 他の要素より上に表示 */
+}
+
+#overlay.hidden {
+    display: none; /* 隠すクラス */
+}
+
+#overlay img {
+    max-width: 80%; /* 画像の最大幅を制限 */
+    height: auto; /* アスペクト比を保持 */
+}
+
+#close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white; /* 閉じるボタンの色 */
+    font-size: 24px; /* フォントサイズ */
+}
+
+
+#close-overlay {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#close-overlay:hover {
+  background-color: #666363;
+}
+
+
 footer {
   text-align: center;
   padding: 20px;
