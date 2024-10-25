@@ -1,0 +1,214 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(240, 240, 240, 0.7); /* 白に近い灰色の半透明 */
+  color: #333;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  margin-right: 60px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.samune {
+	margin-top: 80px; /* ヘッダーの高さを考慮してマージンを追加 */
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 700px; /* 最大の高さを指定（デスクトップ用） */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.samune img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* スマホ用レスポンシブ */
+@media (max-width: 100px) {
+    .samune {
+        height: auto;
+        max-height: 500px; /* スマホでは高さを少し縮小 */
+    }
+}
+
+
+main {
+  padding-top: 80px; /* ヘッダーの高さ分の余白を確保 */
+}
+
+main h2{
+	margin-bottom: 50px;
+}
+
+.stamp-container {
+  display: grid; /* グリッドレイアウトを使用 */
+  grid-template-columns: repeat(3, 1fr); /* 3列に分割 */
+  gap: 50px; /* スタンプ間の間隔を5pxに縮める */
+  justify-items: center; /* スタンプを中央揃え */
+  margin: 20px; /* マージンを追加 */
+}
+
+.stamp {
+  width: 100px; /* スタンプの幅 */
+  height: 100px; /* スタンプの高さ */
+  margin: 0; /* マージンを0にする */
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.stamped {
+  background-color: transparent;
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+#stamp1.stamped {
+  background-image: url('stamp7.png'); /* スタンプ1用の画像 */
+}
+
+/* 他のスタンプのスタイルも同様に */
+#stamp2.stamped {
+  background-image: url('stamp1.png'); /* スタンプ2用の画像 */
+}
+
+#stamp3.stamped {
+  background-image: url('stamp2.png'); /* スタンプ3用の画像 */
+}
+
+#stamp4.stamped {
+  background-image: url('stamp3.png'); /* スタンプ4用の画像 */
+}
+
+#stamp5.stamped {
+  background-image: url('stamp4.png'); /* スタンプ5用の画像 */
+}
+
+#stamp6.stamped {
+  background-image: url('stamp5.png'); /* スタンプ6用の画像 */
+}
+
+#stamp7.stamped {
+  background-image: url('stamp6.png'); /* スタンプ7用の画像 */
+}
+
+#stamp8.stamped {
+  background-image: url('stamp7.png'); /* スタンプ8用の画像 */
+}
+
+#stamp9.stamped {
+  background-image: url('stamp8.png'); /* スタンプ9用の画像 */
+}
+
+.input-section {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #666363;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  background-color: #ff6666;
+}
+
+.reset-button:hover {
+  background-color: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101651;
+    color: #fff;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* スマホ用レスポンシブ */
+@media (max-width: 600px) {
+  .stamp-container {
+    grid-template-columns: repeat(3, 1fr); /* スマホでは2列に */
+    gap: 30px; /* スマホでの間隔もさらに狭く */
+	margin: 60px;
+  }
+
+  .stamp {
+    width: 100px; /* スタンプをさらに小さく */
+    height: 100px;
+    font-size: 16px; /* フォントサイズをさらに小さく */
+  }
+}
