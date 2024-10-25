@@ -196,7 +196,7 @@ footer {
 /* スマホ用レスポンシブ */
 @media (max-width: 375px) {
   .stamp-container {
-    grid-template-columns: repeat(2, 1fr); /* スマホでは2列に */
+    grid-template-columns: repeat(3, 1fr); /* スマホでは2列に */
     gap: 20px;
     margin: 40px;
   }
