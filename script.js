@@ -1,13 +1,13 @@
 const validKeywords = {
-  "stamp1": "りんご",
-  "stamp2": "ばなな",
-  "stamp3": "いちご",
-  "stamp4": "れもん",
-  "stamp5": "みかん",
-  "stamp6": "ぶどう",
-  "stamp7": "さくらんぼ",
-  "stamp8": "すいか",
-  "stamp9": "めろん",
+  "stamp1": "apple",
+  "stamp2": "banana",
+  "stamp3": "cherry",
+  "stamp4": "lemon",
+  "stamp5": "orenge",
+  "stamp6": "berry",
+  "stamp7": "kiwi",
+  "stamp8": "suika",
+  "stamp9": "melon",
 };
 
 function checkKeyword() {
@@ -34,12 +34,16 @@ function checkKeyword() {
   document.getElementById('keyword').value = '';  // 入力欄をクリア
 }
 
-// ローカルストレージからスタンプ状態を復元
-for (let stampId in validKeywords) {
-  if (localStorage.getItem(stampId) === 'true') {
-    document.getElementById(stampId).classList.add('stamped');
+document.addEventListener('DOMContentLoaded', function() {
+  // ここにチェックとスタンプ復元ロジックを置く
+  for (let stampId in validKeywords) {
+    const stampElement = document.getElementById(stampId);
+    if (stampElement && localStorage.getItem(stampId) === 'true') {
+      stampElement.classList.add('stamped');
+    }
   }
-}
+});
+
 
 // スタンプのリセット関数
 function resetStamps() {
